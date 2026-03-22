@@ -1,4 +1,5 @@
 import "../styles/Authentication.css";
+import "../styles/CreateProfile.css";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";

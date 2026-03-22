@@ -83,7 +83,7 @@ const Feed = () => {
           </Link>
           <Link to="/friends" className="nav-item">
             <i className="fa-solid fa-folder-open"></i> My Posts
-            <span className="badge">2</span>
+            {/* <span className="badge">2</span> */}
           </Link>
           <Link to="/apis" className="nav-item">
             <i className="fa-solid fa-comments"></i> Chats
