@@ -12,7 +12,7 @@ const CreatePost = () => {
 
     axios
       // .post("http://localhost:3000/create-post", formData)                          //development
-      .post("https://onboard-social-media-app-1.onrender.com/create-post", formData)  //production
+      .post("https://onboard-virid.vercel.app/create-post", formData)  //production
       .then((res) => {
         alert("Post created successfully!");
         e.target.reset();

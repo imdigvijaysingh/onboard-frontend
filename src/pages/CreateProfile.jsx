@@ -43,7 +43,7 @@ const CreateProfile = () => {
 
     axios
       // .post("http://localhost:3000/profile", formData)                         //development
-      .post("https://onboard-social-media-app-1.onrender.com/profile", formData) //production
+      .post("https://onboard-virid.vercel.app/profile", formData) //production
       .then((res) => {
         setIsSuccess(true);
         navigate('/feed');

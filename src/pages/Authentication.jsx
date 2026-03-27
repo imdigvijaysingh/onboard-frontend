@@ -44,7 +44,7 @@ const Authentication = () => {
       const email = formData.get("email");
       axios
         // .post("http://localhost:3000/auth/signup", {
-        .post("https://onboard-social-media-app-1.onrender.com/auth/signup", {
+        .post("https://onboard-virid.vercel.app/auth/signup", {
           firstName: formData.get("firstName"),
           lastName: formData.get("lastName"),
           email,
@@ -66,7 +66,7 @@ const Authentication = () => {
       // Log In
       axios
         // .post("http://localhost:3000/auth/login", {
-        .post("https://onboard-social-media-app-1.onrender.com/auth/login", {
+        .post("https://onboard-virid.vercel.app/auth/login", {
           email: formData.get("email"),
           password: formData.get("password"),
         })
@@ -128,7 +128,7 @@ const Authentication = () => {
 
     axios
       // .post("http://localhost:3000/auth/verify-email", {
-      .post("https://onboard-social-media-app-1.onrender.com/auth/verify-email", {
+      .post("https://onboard-virid.vercel.app/auth/verify-email", {
         email,
         otp,
       })
