@@ -128,7 +128,7 @@ const Authentication = () => {
 
     axios
       // .post("http://localhost:3000/auth/verify-email", {
-      .post("https://onboard-virid.vercel.app/auth/verify-email", {
+      .post("https://onboard-social-media-app-1.onrender.com/auth/verify-email", {
         email,
         otp,
       })
@@ -142,12 +142,7 @@ const Authentication = () => {
       });
   };
 
-  // const handleResendOtp = () => {
-  //   setOtpDigits(Array(OTP_LENGTH).fill(""));
-  //   setOtpError("");
-  //   axios.post("http://localhost:3000/auth/resend-otp", { email: verifiedEmail }).catch(() => {});
-  //   otpRefs.current[0]?.focus();
-  // };
+ 
 
 
   return (
