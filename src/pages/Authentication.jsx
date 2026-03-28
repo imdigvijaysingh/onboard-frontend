@@ -44,7 +44,7 @@ const Authentication = () => {
       const email = formData.get("email");
       axios
         // .post("http://localhost:3000/auth/signup", {
-        .post("https://onboard-virid.vercel.app/auth/signup", {
+        .post("https://onboard-social-media-app-1.onrender.com/auth/signup", {
           firstName: formData.get("firstName"),
           lastName: formData.get("lastName"),
           email,
@@ -66,7 +66,7 @@ const Authentication = () => {
       // Log In
       axios
         // .post("http://localhost:3000/auth/login", {
-        .post("https://onboard-virid.vercel.app/auth/login", {
+        .post("https://onboard-social-media-app-1.onrender.com/auth/login", {
           email: formData.get("email"),
           password: formData.get("password"),
         })
@@ -141,8 +141,6 @@ const Authentication = () => {
         setOtpLoading(false);
       });
   };
-
- 
 
 
   return (
@@ -292,21 +290,6 @@ const Authentication = () => {
                   {otpLoading ? <span className="spinner"></span> : "VERIFY EMAIL"}
                 </button>
               </form>
-
-              <p className="otp-resend">
-                Didn't receive the code?{" "}
-                <button type="button" className="resend-btn" onClick={handleResendOtp}>
-                  Resend
-                </button>
-              </p>
-
-              <button
-                type="button"
-                className="otp-back-btn"
-                onClick={() => { setShowOtp(false); setOtpDigits(Array(OTP_LENGTH).fill("")); setOtpError(""); }}
-              >
-                ← Back to Sign Up
-              </button>
             </div>
           </div>
 
